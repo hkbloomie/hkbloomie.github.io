@@ -1,0 +1,21 @@
+body {
+    background-color: navy;
+  }
+  h1 {
+    color: darkolivegreen;
+    border: 2px solid royalblue;
+    font-family: verdana;
+    font-size: 300%;
+  }
+  p {
+    color: white;
+    font-family: verdana;
+    font-size: 150%;
+  }
+  h2 {
+    color: olivedrab;
+    border: 8px solid olivedrab;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+  }
+  
