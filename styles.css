@@ -2,7 +2,7 @@ body {
     background-color: navy;
   }
   h1 {
-    color: darkolivegreen;
+    color: green;
     border: 2px solid royalblue;
     font-family: verdana;
     font-size: 300%;
@@ -13,8 +13,8 @@ body {
     font-size: 150%;
   }
   h2 {
-    color: olivedrab;
-    border: 8px solid olivedrab;
+    color: olive;
+    border: 8px solid olive;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: large;
   }
