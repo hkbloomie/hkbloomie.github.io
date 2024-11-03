@@ -23,10 +23,18 @@
  <p>
     I am passionate about digital privacy rights and tech policy regarding social media and artificial intelligence.
  </p>
- <h2
-    id = "hoverheader">
-    <script src="script.js"></script>
-    Learn More About Me Here!
- </h2>
+ <h2 id="myHeader">Hover to see Hannah's favorite color!</h2>
+
+    <script>
+        const header = document.getElementById("myHeader");
+
+        header.addEventListener("mouseover", function() {
+            header.style.color = "green"; 
+        });
+
+        header.addEventListener("mouseout", function() {
+            header.style.color = "white"; 
+        });
+    </script>
 </body>
 </html>
