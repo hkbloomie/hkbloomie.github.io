@@ -23,18 +23,12 @@
  <p>
     I am passionate about digital privacy rights and tech policy regarding social media and artificial intelligence.
  </p>
- <h2 id="myHeader">Hover to see Hannah's favorite color!</h2>
+ <h2 onclick="changeColor(this)">Click here to see my favorite color!</h2>
 
     <script>
-        const header = document.getElementById("myHeader");
-
-        header.addEventListener("mouseover", function() {
-            header.style.color = "green"; 
-        });
-
-        header.addEventListener("mouseout", function() {
-            header.style.color = "white"; 
-        });
+        function changeColor(element) {
+            element.style.color = element.style.color === "green" ? "white" : "green"; 
+        }
     </script>
 </body>
 </html>
