@@ -1,34 +1,90 @@
 <!DOCTYPE html>
-<html>
- <head>
-    <link rel="stylesheet" href="styles.css">
- <title>Hannah B.</title>
- <body>
- </head>
- <h1>
-    Education
- </h1>
- <p>
-    I am a student at Brigham Young University. I am studing cybersecurity. I am minoring in political science and computer science. 
- </p>
- <h1>
-    Hobbies
- </h1>
- <p>
-    I love to play soccer. Yesterday I scored two goals at my intramural game.
- </p>
- <h1>
-    Interests
- </h1>
- <p>
-    I am passionate about digital privacy rights and tech policy regarding social media and artificial intelligence.
- </p>
- <h2 onclick="changeColor(this)">Click here to see my favorite color!</h2>
-
-    <script>
-        function changeColor(element) {
-            element.style.color = element.style.color === "green" ? "white" : "green"; 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Bliss</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2; /* Light pink background */
+            color: #7d3a4d; /* Dark cherry color */
         }
-    </script>
+        header {
+            background-color: #ffb3c6; /* Soft pink */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            font-size: 2.5em;
+            color: #ff3366; /* Vibrant cherry color */
+        }
+        header p {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            color: #ff6680; /* Medium cherry pink */
+            text-align: center;
+        }
+        .container p {
+            line-height: 1.6;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #ffb3c6;
+            color: #7d3a4d;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .cherry {
+            font-size: 3em;
+            text-align: center;
+            margin: 20px 0;
+        }
+        a {
+            color: #ff3366;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍒 Cherry Bliss 🍒</h1>
+        <p>A slice of sweetness in every pixel</p>
+    </header>
+
+    <div class="container">
+        <h2>Welcome to the Cherry Zone!</h2>
+        <p>
+            Indulge in our cherry-themed designs and let the sweetness brighten your day. 
+            Whether you’re here for inspiration or just to enjoy some cuteness, we’ve got you covered!
+        </p>
+        <div class="cherry">🍒🍒🍒</div>
+        <p>
+            Explore more about us by clicking <a href="#">here</a> or share the cherry love with your friends!
+        </p>
+    </div>
+
+    <footer>
+        Made with ❤️ and 🍒 by ChatGPT and Hannah Bloomfield
+    </footer>
 </body>
 </html>
