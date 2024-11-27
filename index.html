@@ -71,6 +71,12 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
         }
+        hint {
+             display: none; /* Start hidden */
+            margin-top: 10px;
+            color: #7d3a4d;
+        }
+            
     </style>
 </head>
 <body>
@@ -89,8 +95,24 @@
          <a href="random.txt" download class="download-link">Download File</a>
         <div class="cherry">🍒🍒🍒</div>
         <p>
-            Explore our beautiful howmetown location with this awesome image!
+            Explore our beautiful hometown location and that file! 
         </p>
+        <button id="revealHintButton">Show Hint</button>
+    <p id="hint">Try using picoCTF's webshell and wget to analyze the file with command line!</p>
+
+    <script>
+        // JavaScript to toggle the hint's visibility
+        document.getElementById('revealHintButton').addEventListener('click', function() {
+            const hint = document.getElementById('hint');
+            if (hint.style.display === 'none') {
+                hint.style.display = 'block';
+                this.textContent = 'Hide Hint'; // Update button text
+            } else {
+                hint.style.display = 'none';
+                this.textContent = 'Show Hint'; // Reset button text
+            }
+        });
+    </script>
     </div>
 
     <footer>
