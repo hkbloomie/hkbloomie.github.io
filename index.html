@@ -71,7 +71,7 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
         }
-        hint {
+        #hint {
              display: none; /* Start hidden */
             margin-top: 10px;
             color: #7d3a4d;
@@ -97,15 +97,28 @@
         <p>
             Explore our beautiful hometown location and that file! 
         </p>
-        <button id="revealHintButton">Show Hint 1:</button>
+        <button id="revealHintButton1">Show Hint 1:</button>
     <p id="hint">Try using picoCTF's webshell and wget to analyze the file with command line!</p>
-        <button id="revealHintButton">Show Hint 2:</button>
-        <p id="hint"> Go to this website and learn more about using command line: https://www.cyberciti.biz/faq/unix-linux-shell-removing-duplicate-lines/ </p>
+        <button id="revealHintButton2">Show Hint 2:</button>
+    <p id="hint"> Go to this website and learn more about using command line: https://www.cyberciti.biz/faq/unix-linux-shell-removing-duplicate-lines/ </p>
         
-
+     <script>
+        // JavaScript to toggle the hint's visibility
+        document.getElementById('revealHintButton1').addEventListener('click', function() {
+            const hint = document.getElementById('hint');
+            if (hint.style.display === 'none') {
+                hint.style.display = 'block';
+                this.textContent = 'Hide Hint'; // Update button text
+            } else {
+                hint.style.display = 'none';
+                this.textContent = 'Show Hint'; // Reset button text
+            }
+        });
+    </script>
+        
     <script>
         // JavaScript to toggle the hint's visibility
-        document.getElementById('revealHintButton').addEventListener('click', function() {
+        document.getElementById('revealHintButton2').addEventListener('click', function() {
             const hint = document.getElementById('hint');
             if (hint.style.display === 'none') {
                 hint.style.display = 'block';
