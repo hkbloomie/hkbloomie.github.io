@@ -119,13 +119,11 @@
                 this.textContent = 'Show Hint 1:'; // Reset button text
             }
         });
-    </script>
-        
-    <script>
+    
         // JavaScript to toggle the hint's visibility
         document.getElementById('revealHintButton2').addEventListener('click', function() {
             const hint2 = document.getElementById('hint2');
-            if (hint.style.display === 'none') {
+            if (hint2.style.display === 'none') {
                 hint2.style.display = 'block';
                 this.textContent = 'Hide Hint 2:'; // Update button text
             } else {
