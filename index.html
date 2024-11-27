@@ -71,7 +71,12 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
         }
-        #hint {
+        #hint1 {
+             display: none; /* Start hidden */
+            margin-top: 10px;
+            color: #7d3a4d;
+        }
+         #hint2 {
              display: none; /* Start hidden */
             margin-top: 10px;
             color: #7d3a4d;
@@ -98,20 +103,20 @@
             Explore our beautiful hometown location and that file! 
         </p>
         <button id="revealHintButton1">Show Hint 1:</button>
-    <p id="hint">Try using picoCTF's webshell and wget to analyze the file with command line!</p>
+    <p id="hint1">Try using picoCTF's webshell and wget to analyze the file with command line!</p>
         <button id="revealHintButton2">Show Hint 2:</button>
-    <p id="hint"> Go to this website and learn more about using command line: https://www.cyberciti.biz/faq/unix-linux-shell-removing-duplicate-lines/ </p>
+    <p id="hint2"> Go to this website and learn more about using command line: https://www.cyberciti.biz/faq/unix-linux-shell-removing-duplicate-lines/ </p>
         
      <script>
         // JavaScript to toggle the hint's visibility
         document.getElementById('revealHintButton1').addEventListener('click', function() {
-            const hint = document.getElementById('hint');
-            if (hint.style.display === 'none') {
-                hint.style.display = 'block';
+            const hint1 = document.getElementById('hint1');
+            if (hint1.style.display === 'none') {
+                hint1.style.display = 'block';
                 this.textContent = 'Hide Hint'; // Update button text
             } else {
-                hint.style.display = 'none';
-                this.textContent = 'Show Hint'; // Reset button text
+                hint1.style.display = 'none';
+                this.textContent = 'Show Hint 1:'; // Reset button text
             }
         });
     </script>
@@ -119,13 +124,13 @@
     <script>
         // JavaScript to toggle the hint's visibility
         document.getElementById('revealHintButton2').addEventListener('click', function() {
-            const hint = document.getElementById('hint');
+            const hint2 = document.getElementById('hint2');
             if (hint.style.display === 'none') {
-                hint.style.display = 'block';
-                this.textContent = 'Hide Hint'; // Update button text
+                hint2.style.display = 'block';
+                this.textContent = 'Hide Hint 2:'; // Update button text
             } else {
-                hint.style.display = 'none';
-                this.textContent = 'Show Hint'; // Reset button text
+                hint2.style.display = 'none';
+                this.textContent = 'Show Hint 2:'; // Reset button text
             }
         });
     </script>
